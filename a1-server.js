@@ -31,10 +31,7 @@ function handleRequest(request, response){
     sum = augend * addend;
     // Send user the server response 
     response.end('Assignment One. Expected Sum of 6 + 3 is 9, Actual Sum returned by program is : ' + sum);
-    console.re.log(augend+addend);
-    console.re.log("Augend = "+augend);
-    console.re.log("Addend = "+addend);
-    console.re.log("Sum = "+sum);
+
     
     
     // ASSIGNMENT
@@ -54,8 +51,15 @@ server.listen(server_port, server_ip_address, function(){
     // 3. Add a debug message which ouputs a message indicating the server is started (listening for user requests).
     // 4. Add a debug message which ouputs your server ip address and your server port number. Your server ip address 
     // and your server port number values are available in the server_ip_address and server_port program global variables
-    console.re.log("Server Ip is "+server_ip_address);
-    console.re.log("Server Ip is "+server_port);
+
     if(server.listen = true){
     console.re.log("Server is Active");}
+    
+    console.re.log("Server Ip is "+server_ip_address);
+    console.re.log("Server Port is "+server_port);
+    
+    console.re.log(augend+addend);
+    console.re.log("Augend = "+augend);
+    console.re.log("Addend = "+addend);
+    console.re.log("Sum = "+sum);
 });

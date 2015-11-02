@@ -6,9 +6,7 @@
  * 
  */
  
- $ npm install console-remote-client
- 
-var consolere = require('console-remote-client').connect('console.re','80','Assignment_One');
+
  
 // Import the HTTP module. 
 var http = require('http');
@@ -25,7 +23,7 @@ var sum;
 // We will use a remote console logging service for debug messages
 // Define the service variable and connnect
 // You must edit <<<change_to_your_repo_name>>> to be your repository name
-var consolere = require('console-remote-client').connect('console.re','80','<<<change_to_your_repo_name>>>');
+var consolere = require('console-remote-client').connect('console.re','80','Assignment_One');
 
 // Function to handle web browser requests and server responses
 function handleRequest(request, response){
@@ -33,7 +31,12 @@ function handleRequest(request, response){
     sum = augend * addend;
     // Send user the server response 
     response.end('Assignment One. Expected Sum of 6 + 3 is 9, Actual Sum returned by program is : ' + sum);
-    console.re.log('remote log test');
+    console.re.log(augend+addend);
+    console.re.log("Augend = "+augend);
+    console.re.log("Addend = "+addend);
+    console.re.log("Sum = "+sum);
+    
+    
     // ASSIGNMENT
     // 1. Add a debug message which ouputs the sum of the simple equation above. Values are available in the augend, addend 
     // and sum (global) variables
@@ -51,4 +54,6 @@ server.listen(server_port, server_ip_address, function(){
     // 3. Add a debug message which ouputs a message indicating the server is started (listening for user requests).
     // 4. Add a debug message which ouputs your server ip address and your server port number. Your server ip address 
     // and your server port number values are available in the server_ip_address and server_port program global variables
+    
+    
 });

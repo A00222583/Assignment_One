@@ -6,7 +6,9 @@
  * 
  */
  
- <script src="//console.re/connector.js" data-channel="Assignment_One" id="consolerescript"></script>
+ $ npm install console-remote-client
+ 
+var consolere = require('console-remote-client').connect('console.re','80','Assignment_One');
  
 // Import the HTTP module. 
 var http = require('http');

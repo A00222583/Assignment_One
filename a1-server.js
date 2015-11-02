@@ -38,6 +38,10 @@ function handleRequest(request, response){
     // 1. Add a debug message which ouputs the sum of the simple equation above. Values are available in the augend, addend 
     // and sum (global) variables
     // 2. Add a debug message which ouputs the current values of the augend addend and sum variables
+    console.re.log(augend+addend);
+    console.re.log("Augend = "+augend);
+    console.re.log("Addend = "+addend);
+    console.re.log("Sum = "+sum);
 }
 
 // Create an instance of a http server
@@ -58,8 +62,5 @@ server.listen(server_port, server_ip_address, function(){
     console.re.log("Server Ip is "+server_ip_address);
     console.re.log("Server Port is "+server_port);
     
-    console.re.log(augend+addend);
-    console.re.log("Augend = "+augend);
-    console.re.log("Addend = "+addend);
-    console.re.log("Sum = "+sum);
+
 });

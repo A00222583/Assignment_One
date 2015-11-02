@@ -6,6 +6,8 @@
  * 
  */
  
+ <script src="//console.re/connector.js" data-channel="Assignment_One" id="consolerescript"></script>
+ 
 // Import the HTTP module. 
 var http = require('http');
 
@@ -29,7 +31,7 @@ function handleRequest(request, response){
     sum = augend * addend;
     // Send user the server response 
     response.end('Assignment One. Expected Sum of 6 + 3 is 9, Actual Sum returned by program is : ' + sum);
-    
+    console.re.log('remote log test');
     // ASSIGNMENT
     // 1. Add a debug message which ouputs the sum of the simple equation above. Values are available in the augend, addend 
     // and sum (global) variables

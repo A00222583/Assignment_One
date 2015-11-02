@@ -54,7 +54,8 @@ server.listen(server_port, server_ip_address, function(){
     // 3. Add a debug message which ouputs a message indicating the server is started (listening for user requests).
     // 4. Add a debug message which ouputs your server ip address and your server port number. Your server ip address 
     // and your server port number values are available in the server_ip_address and server_port program global variables
-    console.re.log("Server is "+server);
     console.re.log("Server Ip is "+server_ip_address);
     console.re.log("Server Ip is "+server_port);
+    if(server.listen = true){
+    console.re.log("Server is Active");}
 });
